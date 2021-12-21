@@ -1,11 +1,10 @@
 import pygame
 
-
 class Player (pygame.sprite.Sprite):
     def __init__(self, *groups):
         super().__init__(*groups)
 
-        self.image = pygame.image.load("data/nave.png")
+        self.image = pygame.image.load("Data/ship.webp")
         self.image = pygame.transform.scale(self.image, [120, 120])
         self.rect = pygame.Rect(50, 50, 100, 100)
 
